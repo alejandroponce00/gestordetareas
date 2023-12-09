@@ -18,6 +18,7 @@ const onSubmit = handleSubmit(async (data) => {
   toast.success('Tarea actualizada!',{
   
     style:{
+
       background:"#C0C0C0",
       color:"gray"
    }})
@@ -47,14 +48,14 @@ useEffect(()=>{
   return (
     <div>
       <form onSubmit={onSubmit}>
-        <input type="text"placeholder="title"
-        {...register("title", {required: true})}
+        <input type="text"placeholder="Titulo"
+        {...register("title", {required: true})}className='formulario'
         />
         {errors.title && <span>este campo es requerido</span>}
-        <textarea rows="3" placeholder="description"
-                {...register("description", {required: true})}
+        <textarea rows="3" placeholder="Descripcion"
+                {...register("description", {required: true})}className='formulario'
 
-        ></textarea>
+        ></textarea >
          {errors.description && <span>este campo es requerido</span>}
         <button>Guardar</button>
       </form>

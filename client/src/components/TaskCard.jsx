@@ -4,7 +4,7 @@ export function TaskCard({task}) {
   const navigate = useNavigate()
 
   return (
-    <div style={{background: "white"}}
+    <div className='card'
     
     onClick={() =>{
       navigate('/tasks/'+ task.id)

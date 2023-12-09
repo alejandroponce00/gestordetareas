@@ -4,8 +4,17 @@ body {background: #536976;  /* fallback for old browsers */
   background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
 }
-h1{color: rgb(153, 171, 176);}
-h2{background: #ffe259;  /* fallback for old browsers */
+h1{
+  @media (max-width: 150px) {
+    background-color: #536976;
+    /* … */
+  }
+  
+  text-align: center;
+  color: rgb(153, 171, 176);}
+h2{
+  border-radius: 5px;
+  background: #ffe259;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
@@ -14,3 +23,12 @@ h2{background: #ffe259;  /* fallback for old browsers */
   }
 h3{color:black}
 h4{color:blue}
+.card{
+  
+text-align: center;
+  background-color: rgb(220, 220, 220);
+margin:  2px 200px 2px 200px;
+border-radius: 5px;}
+.formulario{
+  border-radius: 5px;
+}
